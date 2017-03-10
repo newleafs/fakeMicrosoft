@@ -1,0 +1,274 @@
+body{
+	font-size:18px;
+}
+header{
+	width:100%;
+	height:3rem;
+	border-bottom:1px solid #ddd;
+}
+nav img{
+	width:9rem;
+	height:3rem;
+	float:left;
+}
+ul,li{
+	padding:0;
+	margin:0;
+}
+li{
+	list-style:none;
+}
+a{
+	text-decoration: none;
+}
+.nav-list{
+	font-size: 1rem;
+	color:#111;
+	line-height: 2rem;
+}
+.nav-list .first-list{
+	position: relative;
+	padding:1rem 2rem;
+	text-align: center;
+	float:left;
+}
+.first-list .sec-list,.first-list .third-list{
+	width:15rem;
+	line-height: 2rem;
+	display: none;
+	z-index: 10;
+	background-color: rgba(204, 204, 204,0.84);
+}
+.active{
+	background-color:rgba(204, 204, 204, 0.84);
+}
+.first-list .sec-list{
+	position: absolute;
+	top:3rem;
+	left:0;
+}
+.first-list .third-list{
+	position: absolute;
+	top:0rem;
+	left:15rem;
+}
+.nav-right{
+	float:right;
+	width:31rem;
+	margin-right:1rem;
+}
+.nav-right .input-box{
+	width:20rem;
+	height:2.5rem;
+	border:1px solid #ddd;
+}
+.input-box a{
+	display:inline-block;
+	margin:0.25rem;
+	float:right;
+}
+.input-box a img{
+	width:2rem;
+	height:2rem;
+}
+.input-box input{
+	width:16rem;
+	font-size: 2rem;
+	line-height: 2rem;
+	margin-left:0.5rem;
+	border:0;
+	outline: none;
+}
+.nav-right .btn{
+	display: inline-block;
+	float:right;
+	font-size:1rem;
+	line-height: 3rem;
+}
+/*carousel*/
+.box{
+	width:90%;
+	margin:0 auto;
+}
+.carousel-box{
+	position: relative;
+	width:100%;
+	height:30rem;
+}
+.carousel{
+	position: relative;
+	top:0;
+	width:100%;
+	height:100%;
+}
+.carousel_img{
+	position: absolute;
+	opacity: 0;
+	z-index: 0;
+	transtion:all 0.5s ease-in;
+	-webkit-transition:all 0.5s ease-in;
+	-moz-transition:all 0.5s ease-in;
+}
+.carousel li ,.carousel li img{
+	width:100%;
+	height:100%;
+}
+.carousel_icon{
+	z-index:10;
+	position:absolute;
+	bottom:0.2rem;
+	right:1rem;
+}
+.icon_sheet{
+	display:block;
+	float:left;
+	width:0.5rem;
+	height:0.5rem;
+	text-align:center;
+	border-radius: 50%;
+	margin-left:0.3rem;
+	background-color: #E1E2ED;
+}
+.img_active{
+	opacity: 1;
+	right:0;
+	z-index: 1;
+}
+.icon_active{
+	background-color:#9BD0F9;
+}
+/*container*/
+.container{
+	width:100%;
+	height:26rem;
+	padding:2rem 2rem;
+}
+.container h2{
+	font-size: 2rem;
+}
+.container h2,.container-box div h3{
+	font-weight: lighter;
+}
+.container-box li{
+	float:left;
+	padding: 1rem;
+	width:21.5%;
+	height:100%;
+}
+
+.container-box .img{
+	width:100%;
+	height:100%;
+}
+.store{
+	position: relative;
+	width:100%;
+	height:30rem;
+}
+.store img{
+	width:100%;
+	height:100%;
+}
+.store-box{
+	position: absolute;
+	top:8rem;
+	left:7rem;
+	color:#fff;
+	font-size:1.5rem;
+	font-family: "微软雅黑";
+}
+.store-box h3{
+	font-size:2rem;
+	font-weight: lighter;
+}
+.store-box a{
+	display: block;
+	width:8rem;
+	color: #000;
+	font-size: 1rem;
+	text-align: center;
+	line-height: 3rem;
+	background-color: #fff;
+}
+footer{
+	width:100%;
+	height:16rem;
+	padding:4rem;
+	color:#999;
+	background-color:#E8e8E8;
+}
+.copyright-content .copyright-list{
+	float:left;
+	width:22%;
+	font-size:1rem;
+}
+.copyright-content ul li ul{
+	margin:2rem 0;
+	width: 5rem;
+}
+.copyright-content ul li ul li{
+	font-size:0.8rem;
+	line-height:2rem;
+}
+/*适配设备*/
+
+@media (max-width: 1084px) and (min-width:768px){
+	.nav-right,.nav-list{
+		display: none;
+	}
+	.box{
+		width:100%;
+	}
+	.container{
+		height:55rem;
+	}
+	.container,.one-content{
+		width:100%;
+	}
+	.one-content li{
+		width:40%;
+		padding:2rem;
+	}
+}
+@media (max-width:768px){
+	.nav-right,.nav-list{
+		display: none;
+	}
+	.box{
+		width:100%;
+		padding:0;
+		margin:0 auto;
+	}
+	.container{
+		position: relative;
+		height:100rem;
+		padding: 0;
+	}
+	.store-box{
+		position: relative;
+		width:100%;
+		height:10rem;
+		top:0;
+		left:0;
+		text-align: center;
+		font-size:1rem;
+		margin-top:-10rem;
+		background-color:#000;
+	}
+	.store-box a{
+		width:5rem;
+		font-size: 0.8rem;
+		line-height: 2rem;
+		margin:0 auto;
+	}
+	.store-box h3{
+		margin:0;
+	}
+	.container,.one-content{
+		width:100%;
+	}
+	.one-content li{
+		width:90%;
+		/*padding:2rem;*/
+	}
+}
